@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 150px;
+
+}
+a:hover
+{
+    color: navy;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: lightskyblue;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.glow {
+ 
+  color:#fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  background-color: navy;
+  font-family: cursive;
+  height:60px;
+  border-radius:15px 15px 0px 0px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px skyblue, 0 0 50px lightskyblue, 0 0 60px lightskyblue, 0 0 70px lightskyblue;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px neon, 0 0 60px yellow, 0 0 70px yellow, 0 0 80px navy;
+  }
+}
+.glow1 {
+ 
+  color:#fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  background-color: navy;
+  font-family: cursive;
+ 
+  border-radius:15px 15px 0px 0px;
+}
+
+@-webkit-keyframes glow1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px skyblue, 0 0 50px lightskyblue, 0 0 60px lightskyblue, 0 0 70px lightskyblue;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px neon, 0 0 60px yellow, 0 0 70px yellow, 0 0 80px navy;
+  }
+}

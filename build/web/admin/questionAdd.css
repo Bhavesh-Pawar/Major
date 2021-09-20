@@ -1,0 +1,99 @@
+ gg/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 May, 2021, 10:35:25 PM
+    Author     : hp
+*/
+
+ body {
+  font-family: "Lato", sans-serif;
+  background-image: url("../images/bg1.jpg")
+}
+.titletheme{font-family:sans-serif;
+        font-size:80px;
+        color:black;}
+textarea{
+    resize: none;
+    width: 97%;
+    height: 150px;
+    border: 2px solid #056BA5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 3px 2px;
+    font-size: 20px;
+    background-color: #FEF9FF;
+    /*text-align: center;*/
+}
+.sno{
+    text-align: center;
+}
+.qstndiv{
+ /*background-color: lightblue;*/
+ 
+}
+.qstable{
+    margin-top:45px; 
+    table-layout: fixed;
+    width: 100%;
+    white-space: pre-wrap;
+    border-collapse: separate;
+}
+.qstable td
+{
+/*    border: 2px solid #056BA5;*/
+    width: 10%;
+    
+}
+#qshading{
+    text-align: center;
+    font-weight: bolder;
+}
+#qshading td{
+    font-size: 23px;
+    
+}
+#qno{
+    width: 10%;
+}
+#qstn{
+    width: 40%;
+}
+#dscrip{
+    width: 40%;
+}
+.tst{
+    width: 30%;
+}
+/*.descibe
+{
+    height: 40px;
+    font-size: 25px;
+    width: 370px;
+}*/
+/*.test 
+{
+    height: 40px;
+    font-size: 25px;
+    width: 100px;
+}*/
+.upload
+{
+  margin: auto;
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #057FAC;
+  border: none;
+  border-radius: 15px;
+/*  box-shadow: 0 9px #999;*/
+
+}
+

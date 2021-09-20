@@ -1,0 +1,17 @@
+SMAP
+addOppurtunity_jsp.java
+JSP
+*S JSP
+*F
++ 0 addOppurtunity.jsp
+admin/addOppurtunity.jsp
+*L
+2,5:55
+6,15:60
+21,4:16
+24,3:75
+27,36:79
+62,4:115
+68:121,2
+69,4:123
+*E

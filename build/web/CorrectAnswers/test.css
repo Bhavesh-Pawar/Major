@@ -1,0 +1,225 @@
+*{
+     user-select:none;
+    font-size: 25px;
+    -webkit-user-select: none;
+   }
+
+ body {
+     
+  font-family: "Lato", sans-serif;
+}
+.correct 
+{
+    display: inline-block;
+    margin: auto 450px;
+}
+.button {
+  background-color: navy;/* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button4 {border-radius: 12px;}
+.button4:hover {
+  background-color: #008CBA;
+  color: white;
+}
+       .timer
+        {
+            padding: 10px 10px;
+            margin-left: 87%;
+            border: 2px solid black;
+            background-color: #DFF1FB;
+            visibility: hidden;
+            position: fixed;
+            z-index:1;
+            border-radius: 10px;
+        }
+       .startTest
+       {
+           width: 12.5%;
+           padding: 5px 5px;
+           background-color: #DFF1FB;
+           border: 2px solid black;
+           margin: auto;
+  padding: 8px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: navy;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+       }
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightskyblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: white;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+       .titletheme{font-family:sans-serif;
+        font-size:80px;
+        color:black;}
+        
+        a{color:white;
+        text-decoration:none;}
+        
+        .coltheme{width: 10%;
+        height:30px;
+        font-family:sans-serif;
+        font-size:20px;
+        
+        background-color:navy;
+        border-radius:30px}
+        
+        .coltheme:hover
+        {
+            background:lightskyblue;
+       
+        }
+        
+
+      .coltheme1:hover{background:white;}
+      .buttontheme{width:25%;
+        height:40px;
+        font-family:sans-serif;
+        font-size:20px;
+        color:black; 
+        background-color:black;
+        border-radius:30px}
+       
+        .highlighter{
+        width: 10%;
+        height:40px;
+        font-family:sans-serif;
+        font-size:20px;
+        background-color:lightskyblue;
+        border-radius:30px}
+
+.mySlides {
+    display:none;
+height:350px;
+width: 100%;}
+
+
+
+.container{
+ margin-bottom: 22px;
+ margin-left: 10px;
+ background-color: #DFF1FB;
+ padding-left: 4px;
+}
+
+.question{
+    margin-bottom: 10px;
+}
+.dot {
+  height: 30px;
+  width: 31px;
+  background-color: #40B2F9;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px 24px 0px 0px;
+  color: white;
+}
+input{
+        font-size: 15px;
+        padding: 10px 10px;
+        margin: 10px 10px;
+    }
+
+.btn {
+  margin: auto;
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: navy;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {background-color: #0000A8}
+
+.btn:active {
+  background-color: #0000CD;
+  box-shadow: 0 6px #999;
+  transform: translateY(4px);
+}
+
+/* input[type="submit"]:hover{
+           border-color: white;
+           border-radius: 25px;
+           background-color: rgb(247, 243, 243);
+           color: rgb(14, 194, 149);
+       } */
+
+
+
+
+

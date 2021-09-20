@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+        <link href="signin_signup.css" rel="stylesheet">
+
+    <script>
+
+         window.history.forward(); 
+        function noBack() { 
+            window.history.forward(); 
+        } 
+
+</script>
+    <style>
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+		
+	</style>
+        <script>
+
+
+
+
+
+
+function validAll() 
+{
+    var checkFname=allFname();
+    var checkLname=allLname();
+    var pass=allPassword();
+    if(checkFname && pass && checkLname) 
+    {
+        return true;
+    }
+ else 
+ {return false;}
+}
+function allLname() 
+{
+     var x = document.forms["signupForm"]["lname"];
+   var letters = /^[A-Za-z]+$/;
+   if(x.value.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+      document.getElementById("lnameError").innerHTML = "*INVALID LAST NAME";
+     return false;
+     }
+}
+function allPassword() 
+{
+    var x=document.forms["signupForm"]["password"];
+    var y=document.forms["signupForm"]["cpassword"];
+    if(x.value==y.value)
+    {
+        return true;
+    }
+    else{
+        document.getElementById("passError").innerHTML="*WRONG PASSWORD";
+        return false;
+    }
+}
+function allFname()
+  {
+    var x = document.forms["signupForm"]["fname"];
+   var letters = /^[A-Za-z]+$/;
+   if(x.value.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+      document.getElementById("fnameError").innerHTML = "*INVALID FIRST NAME";
+     return false;
+     }
+  }
+  </script>
+</head>
+<body background="bg1.jpg">
+     <table style="width:100%;background-color:white;border-radius:30px;height:60px;opacity:0.7">
+        <tr align="center">
+             <td><img src="logo.png" width="150px" height="150px"></td>
+            <td class="titletheme">Test Your Skills</td>
+             </tr>
+             
+        </table>
+    <br><br><br><br><br>
+    <div id="user"> </div>
+<div class="design">
+      <h2>  Sign Up </h2>
+   <br> 
+       Welcome to Test Your Skills
+      </br> 
+    <div style="max-width:400px;margin:auto">
+        <form action="sign_up.jsp" method="POST" name='signupForm' onsubmit="return validAll()">	
+        <div class="input-icons">
+           <div> <label for="First">
+                <i class="fa fa-user icon"></i>
+            </label>
+		 	<input id="First" class="input-field" type="text" placeholder="First name" name="fname" required> 
+                         <span class="showError" id="fnameError" ></span>  </div>
+            <div> <label for="Last">
+                <i class="fa fa-user icon"></i>
+            </label>
+            <input id="Last" class="input-field" type="text" placeholder="Last name" name="lname" required> 
+            <span class="showError" id="lnameError" > </span> </div>
+            <label for="email">
+                <i class="fa fa-envelope icon"></i>
+            </label>
+            <input id="email" class="input-field" type="email" placeholder="Email Address" name="email" required>
+            
+            <label for="pass">
+                <i class="fa fa-lock icon"></i>
+            </label>
+            <input id="pass"class="input-field" type="password" placeholder="Password" name="password" required>
+            
+            <div> <label for="cpass">
+                <i class="fa fa-lock icon"></i>
+            </label>
+            <input id="cpass" class="input-field" type="password" placeholder="Confirm Password" name="cpassword" required>
+            <span id="passError" class="showError"></span> </div>
+   
+            <input class="button button4" type="submit" value="Sign Up">
+            <input class="button button4" type="reset" value="Reset">
+            </div>
+        </form>
+
+       <h6> If already registered, please <a href="sign_in.html"> Sign in </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
