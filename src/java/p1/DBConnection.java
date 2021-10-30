@@ -13,7 +13,7 @@ public class DBConnection
 {
 static String driver = "com.mysql.jdbc.Driver";
 static String connectionUrl = "jdbc:mysql://localhost:3306/";
-static String database = "quiz_system";
+static String database = "major";
 static String userid = "root";
 static String password = "root";
 static Connection conn=null;

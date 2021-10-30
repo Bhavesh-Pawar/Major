@@ -21,7 +21,7 @@
     
         <body background="images/bg1.jpg">
          <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="close.png"width="30px"height="30px"></a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/close.png"width="30px"height="30px"></a>
   <a href="profile.jsp">Profile</a>
   <a href="tutorial.jsp">Tutorials</a>
   <a href="about_us.jsp">About</a>

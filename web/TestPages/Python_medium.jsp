@@ -202,8 +202,8 @@ print(a['A'])
  </div>
         <div>a<input type="radio" name="80" value="a">An exception is thrown since the dictionary
             is empty</div>
-        <div>b<input type="radio" name="80" value="b">‘ ‘</div>
-        <div>c<input type="radio" name="80" value="c">‘A’</div>
+        <div>b<input type="radio" name="80" value="b">? ?</div>
+        <div>c<input type="radio" name="80" value="c">?A?</div>
         <div>d<input type="radio" name="80" value="d">0</div>  
         </div>        
                 <button class="btn" value="submit">Submit</button>

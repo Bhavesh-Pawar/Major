@@ -70,7 +70,6 @@ out.println(e);
 %>
 <jsp:include page="./chart.jsp"/>
 
-<h2> <%= session.getAttribute("user_id") %> </h2>
 <h2>Correct answers are : <%= count %></h2>
 <a href="../CorrectAnswers/Python_medium.jsp" >Click me to get Correct answers</a>
 

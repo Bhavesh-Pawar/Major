@@ -233,7 +233,7 @@ public final class about_005fus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\n");
       out.write("<div class=\"about-section\">\n");
       out.write("  <h1>About Us</h1>\n");
-      out.write("  <p>Some text about who we are and what we do.</p>\n");
+      out.write("  <p>Here are some details of our team.</p>\n");
       out.write("  <p>Resize the browser window to see that this page is responsive by the way.</p>\n");
       out.write("</div>\n");
       out.write("\n");
