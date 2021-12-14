@@ -12,6 +12,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C Difficult Question</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="./test.css">
     <script>
         
@@ -243,5 +247,28 @@ printf("%d\n", k);
          %> 
     </form>
 </div>
+ <div id="chat">
+    <canvas id="canvas"   width="300px" height="300px"  ><video id="video" autoplay ></video></canvas>
+    </div>
 </body>
+<script src="ts.js"></script>
+<script src="blazeface.js"></script>
+<script src="script.js"></script>
+<script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+<script> 
+    let x=0;
+  $(document).ready(function(){
+  $(document).mouseleave(function()
+  {
+      if (x==5) 
+      {
+          $('#C').submit();
+      }
+    ++x;
+   alert("Warning No. "+x);
+});
+  });
+    </script>
 </html>

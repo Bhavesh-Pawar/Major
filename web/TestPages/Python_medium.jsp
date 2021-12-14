@@ -225,5 +225,28 @@ function closeNav() {
 }
 </script>
 
+ <div id="chat">
+    <canvas id="canvas"   width="300px" height="300px"  ><video id="video" autoplay ></video></canvas>
+    </div>
 </body>
+<script src="ts.js"></script>
+<script src="blazeface.js"></script>
+<script src="script.js"></script>
+<script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+<script> 
+    let x=0;
+  $(document).ready(function(){
+  $(document).mouseleave(function()
+  {
+      if (x==5) 
+      {
+          $('#C').submit();
+      }
+    ++x;
+   alert("Warning No. "+x);
+});
+  });
+    </script>
 </html>

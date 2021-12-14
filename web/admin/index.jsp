@@ -8,7 +8,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-<link rel="stylesheet" href="../cdn.jsdelivr.net_npm_bootstrap@5.0.1_dist_css_bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" href="index.css">
 <script>
 

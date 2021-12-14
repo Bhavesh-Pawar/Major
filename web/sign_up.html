@@ -7,9 +7,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
-        <link href="signin_signup.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="signin_signup.css" rel="stylesheet">
 
     <script>
 
@@ -20,11 +24,155 @@
 
 </script>
     <style>
-        *{
-            font-family: 'Lato', sans-serif;
+        body {
+            font-family: 'Zen Old Mincho', serif;
         }
 		
 	</style>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+/* .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+} */
+
+/* Full-width textarea */
+/* .form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+ */
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+/* .form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+ */
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+/* gc chatbot */
+
+.gc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  background-color: rgba(223, 242, 247);
+
+}
+
+.chat {
+  height: 300px;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
+
+::-webkit-input-placeholder { 
+  color: .711 
+}
+ 
+input { 
+  border: 0; 
+  padding: 15px; 
+  margin-left: auto;
+  border-radius: 10px; 
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  /* margin: 5px 0px 0px 5px; */
+  border-radius: 10px;
+  /* display: inline-block; */
+}
+
+#bot {
+  margin-left: auto;
+}
+
+.bot {
+  font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,  
+  monospace;
+  display: inline-block;
+}
+
+.avatar {
+  height: 25px;
+}
+
+.response {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+
+</style>
+
         <script>
 
 
@@ -91,7 +239,7 @@ function allFname()
      <table style="width:100%;background-color:white;border-radius:30px;height:60px;opacity:0.7">
         <tr align="center">
              <td><img src="./images/logo.png" width="150px" height="150px"></td>
-            <td class="titletheme">Test Your Skills</td>
+             <td class="titletheme" style="font-family: 'Zen Old Mincho', serif;">Test Your Skills</td>
              </tr>
              
         </table>
@@ -139,6 +287,37 @@ function allFname()
        <h6> If already registered, please <a href="sign_in.html"> Sign in </a>
         </div>
     </div>
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <div id="container" class="gc">
+  <div class="form-container">
+    <h1>Chat</h1>
+
+<div id="chat" class="chat col">
+      <img src="images/bot.png" alt="Robot cartoon" height="150vh" class="bot">
+      <div id="messages" class="messages"></div>
+      <input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+
+    </div>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </div>
+</div>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<script type="text/javascript" src="js/index.js" ></script>
+<script type="text/javascript" src="js/constants.js" ></script>
+<script type="text/javascript" src="js/speech.js" ></script>
+
 </body>
 </html>
 

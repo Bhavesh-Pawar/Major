@@ -16,6 +16,7 @@
         
   </style>
     </head>
+    
     <body background="../images/bg1.jpg" >
         
         <table style="width:100%;background-color:white;border-radius:30px;height:60px;opacity:0.7">
@@ -27,9 +28,10 @@
             <tr>
             
                 <span id="display" class="timer"></span>
-            
+                
             <div id="submitted"></div>          
             </tr>
+        
             </table>
     
 <script>
@@ -170,5 +172,27 @@ a = square(2+3)
          %>   
     </form>
 </div>
+    <div id="chat">
+    <canvas id="canvas"   width="300px" height="300px"  ><video id="video" autoplay ></video></canvas>
+    </div>
 </body>
+<script src="ts.js"></script>
+<script src="blazeface.js"></script>
+<script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+<script> 
+    let x=0;
+  $(document).ready(function(){
+  $(document).mouseleave(function()
+  {
+      if (x==5) 
+      {
+          $('#C').submit();
+      }
+    ++x;
+   alert("Warning No. "+x);
+});
+  });
+    </script>
 </html>

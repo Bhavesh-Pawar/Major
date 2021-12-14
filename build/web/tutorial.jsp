@@ -5,15 +5,15 @@
         <title>Tutorials</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="cdn.jsdelivr.net_npm_bootstrap@5.0.1_dist_css_bootstrap.min.css">
         <link rel="stylesheet" href="tutorial.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
     </head>
     <body>
     <table style="width:100%;background-color:white;border-radius:30px;height:60px;opacity:0.7">
         <tr align="center">
             <td><img src="images/logo.png"width="150px"height="150px"alt="logo"></td>
             <td class="titletheme">Test Your Skills</td>
-            <td class="btn btn-primary mt-4"><h3><a href="index.jsp">Index Page</a></h3></td>
+            <td ><h3><button class="btn btn-primary"><a href="index.jsp" style="color: white;text-decoration: none" >Home</a></button></h3></td> 
         </tr>
     </table>
         

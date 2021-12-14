@@ -6,81 +6,112 @@
 %>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C++ Medium Question</title>
-    <link rel="stylesheet" type="text/css" href="test.css">
-   
-    </head>
-<body background="../images/bg1.jpg">
-    <div>
-       
-        <table style="width:100%;background-color:white;border-radius:30px;height:60px;opacity:0.7">
-            <tr align="center">
-    
-                <td><img src="../images/logo.png"width="150px"height="150px"></td>
-                <td class="titletheme">Test Your Skills</td>
-                <td class="button button4"><a href="../index.jsp">Go to index page </a> </td>
-                 </tr>
-            </table>
-            <div class="correct"> <h1> Correct Answers: C++_Medium</h1> </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/my_js.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        body {
+            font-family: 'Zen Old Mincho', serif;
+        }
+    </style>
+    <script>
+        window.history.forward(); 
+        function noBack() { 
+            window.history.forward(); 
+        } 
+    </script>
+</head>
 
-          <div id="question"> 
-        <div class="container">
-        <div>1.What will be the output of the i and j ? </div>
-<pre>
-    int i=5,j;
-    j= ++i + ++i;
-</pre>
-        <div>c<input type="radio" name="41" value="c">i=7 j=14</div>
+<body background="../images/bg1.jpg">
+    <div class="container-fluid">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item m-1">
+                <img src="../images/logo.png" class="img-fluid" alt="">
+            </li>
+            <li class="nav-item m-1">
+                <h1 class="text-center">Test Your Skills</h1>
+            </li>
+            <li class="nav-item m-1">
+                <button class="btn" style="background-color: navy;"> <a href="../index.jsp" class="text-light">Home
+                    </a></button>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <h1> Correct Answers: C++_Medium</h1>
         </div>
-        <div class="container">
-        <div>2.Delaration a pointer more than once may cause ____</div>
-        <div>c<input type="radio" name="42" value="c">Trap</div>
-    </div>
-    <div class="container">
-        <div>3.In CPP, members of a class are ______ by default.</div>
-        <div>b<input type="radio" name="43" value="b">Private</div>
-    </div>
-    <div class="container">
-        <div>4.Which classes allow primitive types to be accessed as objects?</div>
-        <div>b<input type="radio" name="44" value="b">Virtual</div>
-    </div>
-    <div class="container">
-        <div>5.When is std::bad_alloc exception thrown?</div>
-        <div>a<input type="radio" name="45" value="a">When new operator cannot allocate memory</div>
-    </div>
-    <div class="container">
-        <div>6.Which of the following keyword supports dynamic method resolution?</div>
-        <div>a<input type="radio" name="46" value="a">abstract</div>
-    </div>
-    <div class="container">
-        <div>7.Which one of the following is not a fundamental data type in C++ </div>
-        <div>a<input type="radio" name="47" value="a"> float</div>
+
+        <div class="row m-3 correct">
+            <div class="col-12">1.What will be the output of the i and j ? </div>
+            <pre>
+                      int i=5,j;
+                      j= ++i + ++i;
+                    </pre>
+            <div class="col-12">c. i=7 j=14</div>
         </div>
-        <div class="container"> 
-        <div>8.The programming language that has the ability to create new data types is called___.</div>
-        <div>d<input type="radio" name="48" value="d">Extensible</div>  
+        <div class="row m-3 correct">
+            <div class="col-12">2.Delaration a pointer more than once may cause ____</div>
+            <div class="col-12">c. Trap</div>
         </div>
-        <div class="container">
-        <div>9.Which of the following is not a valid conditional inclusions in
-            preprocessor directives </div>
-        <div>a<input type="radio" name="49" value="a">#ifdef</div>
+        <div class="row m-3 correct">
+            <div class="col-12">3.In CPP, members of a class are ______ by default.</div>
+            <div class="col-12">b. Private</div>
         </div>
-        <div class="container">
-        <div>10.The output of this program is 
-<pre>
-    int a = 10;
-    void main()
-    {
-     int a = 20;
-     cout << a << ::a;
+        <div class="row m-3 correct">
+            <div class="col-12">4.Which classes allow primitive types to be accessed as objects?</div>
+            <div class="col-12">b. Virtual</div>
+        </div>
+        <div class="row m-3 correct">
+            <div class="col-12">5.When is std::bad_alloc exception thrown?</div>
+            <div class="col-12">a. When new operator cannot allocate memory</div>
+        </div>
+        <div class="row m-3 correct">
+            <div class="col-12">6.Which of the following keyword supports dynamic method resolution?</div>
+            <div class="col-12">a. abstract</div>
+        </div>
+        <div class="row m-3 correct">
+            <div class="col-12">7.Which one of the following is not a fundamental data type in C++ </div>
+            <div class="col-12">a.  float</div>
+        </div>
+        <div class="row m-3 correct">
+            <div class="col-12">8.The programming language that has the ability to create new data types is called___.
+            </div>
+            <div class="col-12">d. Extensible</div>
+        </div>
+        <div class="row m-3 correct">
+            <div class="col-12">9.Which of the following is not a valid conditional inclusions in
+                preprocessor directives </div>
+            <div class="col-12">a. #ifdef</div>
+        </div>
+        <div class="row m-3 correct">
+            <div class="col-12">10.The output of this program is
+                <pre>
+                    int a = 10;
+                    void main()
+                    {
+                        int a = 20;
+                        cout << a << ::a;
     }
-</pre> </div>
-        <div>c<input type="radio" name="50" value="c"> 20 10</div>
-         </div>
-       
-</div>
+</pre>
+            </div>
+            <div class="col-12">c. 20 10</div>
+        </div>
+
+    </div>
 </body>
+
 </html>

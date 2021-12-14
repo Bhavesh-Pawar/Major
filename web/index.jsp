@@ -9,7 +9,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+        body {
+            font-family: 'Zen Old Mincho', serif;
+        }
+    </style>
 <script>
 
          window.history.forward(); 
@@ -84,6 +94,7 @@
                  </table>
           <jsp:include page="weekly_contest.jsp"/>
           <br><br><br><br><br><br>
+          <div id="container" class="gc">
           <div class="w3-content w3-section" style="max-width:1500px">
               <img class="mySlides" src="images/t1.jpg" style="width:100%">
   <img class="mySlides" src="images/t2.jpg" style="width:100%">
@@ -92,6 +103,16 @@
     <img class="mySlides" src="images/t5.jpg" style="width:100%">
     <img class="mySlides" src="images/t6.jpg" style="width:100%">
 </div>
+<div id="chat" class="chat col">
+  <img src="images/bot.png" alt="Robot cartoon" height="150vh" class="bot">
+  <div id="messages" class="messages"></div>
+  <input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+
+</div>
+</div>
+<script type="text/javascript" src="js/index.js" ></script>
+<script type="text/javascript" src="js/constants.js" ></script>
+<script type="text/javascript" src="js/speech.js" ></script>
           <script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
